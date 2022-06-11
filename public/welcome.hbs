@@ -1,0 +1,18 @@
+<h1>Welcome</h1>
+<div class="FormInp">
+<form action="/createClient" method="POST">
+<div class="TableInp">
+      <label for="rub">RUB</label>
+      {{!-- <input type="tel" name="rub" placeholder="RUB"> --}}
+         <input type="text"  placeholder="rub" name="rub" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" data-rub>
+</div>
+<br/>
+<div class="TableInp">
+      <label for="usd">USD</label>
+      <input type="text" name="usd" placeholder="USD" disabled>
+</div>
+<br/>
+<button type="submit">chanche money</button>
+</form>
+</div>
+<script src="js/welcome.js" defer></script>
